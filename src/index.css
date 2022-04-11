@@ -1,0 +1,45 @@
+.main-header{
+  background-position: top;
+  background-image: url(../Images/sloth.png);
+  background-repeat: no-repeat;
+  border-radius: 5%;
+  padding-top: 0;
+  min-height: 300px; 
+}
+
+.main-header h1{
+  font-size: 80px;
+  font-family:'Courier New', Courier, monospace;
+  text-align: right;
+  padding-top: 155px;
+  padding-right: 190px;
+  color: #084508;
+}
+
+.navbar{
+  background-color: #084508;
+  min-height: 3px;
+  text-align: right;
+}
+
+.navbar li{
+  display: inline;
+  font-family:'Courier New', Courier, monospace;
+  color: white;   
+  font-size: 25px;
+  padding-right: 40px;
+}
+
+.link{
+  color: white;
+  text-decoration: none;
+}
+
+.main-footer{
+  background: #084508;
+  color: #fff;
+  text-align: center;
+  margin-top: 20px;
+  width: 100%;
+  line-height: 80px;
+}
