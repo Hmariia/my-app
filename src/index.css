@@ -1,6 +1,6 @@
 .main-header{
   background-position: top;
-  background-image: url(../Images/sloth.png);
+  background-image: url(Images/sloth.png);
   background-repeat: no-repeat;
   border-radius: 5%;
   padding-top: 0;
@@ -22,17 +22,14 @@
   text-align: right;
 }
 
-.navbar li{
+.link{
+  color: white;
+  text-decoration: none;
   display: inline;
   font-family:'Courier New', Courier, monospace;
   color: white;   
   font-size: 25px;
   padding-right: 40px;
-}
-
-.link{
-  color: white;
-  text-decoration: none;
 }
 
 .main-footer{
@@ -42,4 +39,166 @@
   margin-top: 20px;
   width: 100%;
   line-height: 80px;
+}
+
+.wrapper{
+  display: grid;
+  grid-gap: 1em;
+  grid-auto-rows: minmax(100px auto);
+  margin-top: 20px;
+}
+
+.wrapper > div{
+  padding: 1em;
+}
+
+.about{
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+
+.about div{
+  border-width: 5px;
+  border-color: #084508;
+  border-style:solid;
+  border-radius: 20px;
+  text-align: center;
+  background-color: #baabbf;
+}
+
+.text-box{
+  grid-column: 2;
+  grid-row: 1/5;
+  font-family:'Courier New', Courier, monospace;
+  font-size: 27px;
+  text-align: center;
+}
+
+.img-box1{
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.img-box2{
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.img-box3{
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.img-box4{
+  grid-column: 1;
+  grid-row: 4;
+}
+
+.contact{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0em;
+  margin: 30px 70px 30px 150px;
+}
+
+.contact div{
+  line-height: 1.6em;
+  font-family:'Courier New', Courier, monospace;
+  color: #084508;
+  font-size: 100%;
+}
+
+.box1, .box2{ 
+  border-right-style: solid;
+  border-right-color: #084508;
+  border-right-width: 2px;
+  margin-right: 4em;
+}
+
+.box1{
+  background-image: url(Images/image.jpg);
+  background-repeat: no-repeat;
+  text-indent: 155px;
+  font-family:cursive;
+  color: #084508;
+  min-height: 140px;
+}
+
+.box2 {
+  grid-row: 2/3;
+  grid-column: 1;
+  text-align: top;
+}
+
+.box3{
+  grid-column: 2;
+  grid-row: 1/3;
+  border: solid;
+  border-color: #084508;
+  border-width: 2px;
+  border-left: none;
+}
+
+.box2 a{
+  color: #084508;
+  line-height: 1.5em;
+  font-size: 120%;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.box2 button{
+  margin-top: 30px;
+  border: none;
+  background-color: #084508;;
+  color: #fff;
+  padding: 15px 32px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.my-form{
+  padding-top: 20px;
+  padding-right: 150px;
+}
+
+.my-form input, .my-form textarea{
+  padding: 8px;
+  width: 100%;
+  border-color: #084508;
+  border-width: 2px;
+}
+
+.form-group{
+  padding-bottom: 25px;
+}
+
+.sloth-button{
+  background-image: url(Images/coffee-sloth.jpg);
+  margin-left: 50px;
+  background-repeat: no-repeat;
+  min-height: 150px;
+}
+
+.sloth-button button{
+  border: solid;
+  border-width: 2px;
+  border-color: #084508;
+  border-radius: 50%;
+  text-align: center;
+  padding: 12px;
+  background-color: white;
+  color: #084508;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: larger;
+  font-weight: 900;
+  margin-left: 155px;
+  margin-top: 17px;
+}
+.box2 button:hover, .sloth-button :hover{
+  border-color: red;
+  color: red;
 }
